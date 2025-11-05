@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2D Game Editor</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="editor-container">
+        <div id="left-panel">
+            <div id="scene-graph">
+                <h3>Scene</h3>
+                <ul>
+                    <!-- Scene objects will be listed here -->
+                </ul>
+            </div>
+            <div id="assets-panel">
+                <h3>Assets</h3>
+                <input type="file" id="asset-uploader" multiple>
+                <div id="asset-list">
+                    <!-- Uploaded assets will be shown here -->
+                </div>
+            </div>
+        </div>
+        <div id="main-panel">
+            <canvas id="game-canvas"></canvas>
+        </div>
+        <div id="right-panel">
+            <div id="properties-panel">
+                <h3>Properties</h3>
+                <!-- Selected object properties will be shown here -->
+            </div>
+        </div>
+    </div>
+    <div id="toolbar">
+        <button id="export-btn">Export Project</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <script src="editor.js"></script>
+</body>
+</html>
